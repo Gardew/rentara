@@ -1,4 +1,4 @@
- server/
+server/
 prisma/
 .env
 .env.local
@@ -10,5 +10,3 @@ README.md
 render.yaml
 Dockerfile
 .dockerignore
-src/pages/content/TenantCreation.jsx
-src/pages/content/PropertyCreation.jsx
