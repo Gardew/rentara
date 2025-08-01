@@ -1,4 +1,9 @@
-# Setup Guide
+# Rentara - Real Estate Management
+
+A real estate management application built with React and Node.js.
+
+## Local Development
+
 1. Clone the repository
 2. Install dependencies
 ```bash
@@ -19,6 +24,25 @@ REFRESH_TOKEN_EXPIRES_IN=7d
 5. Start the development servers
 ```bash
 npm run dev
-npm run start:server
+cd server && npm start
 ```
 6. Open the app in your browser at `http://localhost:5173`
+
+## Deployment
+
+### Frontend (Vercel)
+- Framework: Vite + React
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Environment Variables:
+  - `VITE_API_URL`: Backend API URL
+  - `VITE_PUBLIC_URL`: Frontend URL
+
+### Backend (Render)
+- Framework: Express.js
+- Build Command: `cd server && npm install`
+- Start Command: `cd server && npm start`
+- Environment Variables:
+  - `DATABASE_URL`: PostgreSQL connection string
+  - `JWT_SECRET`: JWT secret key
+  - `NODE_ENV`: production

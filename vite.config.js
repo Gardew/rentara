@@ -21,6 +21,10 @@ export default defineConfig({
       react(),
     tailwindcss()],
 
+  build: {
+    outDir: 'dist',
+  },
+
   optimizeDeps: {
     esbuildOptions: {
       loader: {

@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const router = express.Router();
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://rentara.vercel.app', 'https://your-app.vercel.app'],
+    origin: ['http://localhost:5173', 'https://rentara.vercel.app', 'https://rentara-frontend.vercel.app'],
     credentials: true
 }));
 app.use(express.json());
@@ -121,7 +121,7 @@ app.use((err, req, res, next) => {
 const server = createServer(app );
 const io = new Server(server, {
     cors: {
-        origin: ['http://localhost:5173', 'https://rentara.vercel.app', 'https://your-app.vercel.app'],
+        origin: ['http://localhost:5173', 'https://rentara.vercel.app', 'https://rentara-frontend.vercel.app'],
         methods: ["GET", "POST"],
         credentials: true
     }

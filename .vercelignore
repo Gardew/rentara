@@ -1,0 +1,14 @@
+ server/
+prisma/
+.env
+.env.local
+.env.production
+node_modules/
+.git/
+.gitignore
+README.md
+render.yaml
+Dockerfile
+.dockerignore
+src/pages/content/TenantCreation.jsx
+src/pages/content/PropertyCreation.jsx
