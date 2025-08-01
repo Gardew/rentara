@@ -1,6 +1,9 @@
 services:
   - type: web
-    name: rentara
+    name: rentara-backend
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    buildCommand: npm install
+    startCommand: npm run start:server
+    envVars:
+      - key: NODE_ENV
+        value: production
